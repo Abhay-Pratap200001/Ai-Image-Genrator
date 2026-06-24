@@ -1,6 +1,6 @@
 import { pgTable, uuid, text, timestamp } from "drizzle-orm/pg-core";
 
-export const generation = pgTable("generations", {
+export const generations = pgTable("generations", {
   id: uuid("id").primaryKey().defaultRandom(),
   clerkUserId: text("clerk_user_id").notNull(),
   originalFileName: text("original_file_name"),
