@@ -12,6 +12,8 @@
   "dependencies": {
     "@clerk/nextjs": "^7.5.7",
     "@clerk/themes": "^2.4.57",
+    "@imagekit/next": "^2.1.5",
+    "@imagekit/nodejs": "^7.8.1",
     "@neondatabase/serverless": "^1.1.0",
     "@sentry/nextjs": "^10.58.0",
     "class-variance-authority": "^0.7.1",
