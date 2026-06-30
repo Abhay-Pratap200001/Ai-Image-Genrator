@@ -5,7 +5,7 @@ export type GenerationHistorySummaryItem = {
   id: string;
   clerkUserId: string;
   originalFileName: string | null;
-  sourceImageUrl: string;
+  // sourceImageUrl: string;
   resultImageUrl: string;
   styleSlug: string;
   styleLabel: string;

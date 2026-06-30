@@ -188,7 +188,6 @@ function useStudioWorkbenchValue({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          sourceImageUrl: nextUploadedSource.imageUrl,
           sourceMimeType: nextUploadedSource.sourceMimeType,
           originalFileName: nextUploadedSource.originalFileName,
           styleSlug: selectedStyle,
