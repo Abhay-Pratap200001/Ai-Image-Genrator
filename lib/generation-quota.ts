@@ -2,9 +2,9 @@ import { countGenerationsSince, utcMonthStart } from "@/db/generations";
 import type { SessionAuthObject } from "@clerk/backend";
 
 export type GenerationQuotaSnapshot = {
-  limt: number;
+  limit: number;
   used: number;
-  remainig: number;
+  remaining: number;
 };
 
 export const BILLING_PLAN_KEY = {
@@ -42,7 +42,7 @@ export async function getGenrationQuotaSnapshot(
   return {
     limit,
     used,
-    remainig: Math.max(0, limit - used),
+    remaining: Math.max(0, limit - used),
   };
 }
 

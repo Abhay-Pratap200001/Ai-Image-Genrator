@@ -213,7 +213,7 @@ export async function POST(request: Request) {
     const savedGeneration = await createGeneration({
       clerkUserId: userId,
       originalFileName: typeof originalFileName === "string" ? originalFileName : null,
-      sourceImageUrl,
+      sourceImage: sourceImageUrl,
       resultImageUrl,
       styleSlug: preset.slug,
       styleLabel: preset.label,
